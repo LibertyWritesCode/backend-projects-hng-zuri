@@ -30,7 +30,7 @@ import express from "express";
 
 const app = express();
 
-app.get ('/', async(req: express.Request, res: express.Response) => {
+app.get ('/', async(req, res) => {
 
     try {
         const { slack_name, track } = req.query;
