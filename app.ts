@@ -46,7 +46,7 @@ app.get ('/', async(req: express.Request, res: express.Response) => {
         const current_day = weekday[day.getDay()];
         const utc_time = day.toISOString();
         const github_repo_url = `https://github.com/LibertyWritesCode/backend-projects-hng-zuri`
-        const github_file_url = `https://github.com/LibertyWritesCode/hmp-todo-app/blob/main/app.ts`
+        const github_file_url = `https://github.com/LibertyWritesCode/backend-projects-hng-zuri/blob/main/app.ts`
         const status_code = "200"
 
         return res.status(200).send({ slack_name, current_day, utc_time, track, github_file_url, github_repo_url, status_code });
